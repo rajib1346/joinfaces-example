@@ -9,21 +9,28 @@
                 xmlns:sec="http://www.springframework.org/security/tags">
     <p:panelGrid columns="4" layout="grid">
          
-        
+         <h:panelGrid>
+           
             <p:graphicImage value="#{resource['images/rajib.jpg']}"
                             height="100" width="200"/>
-           <p:panelGrid columns="3">
+      
+           <h:panelGrid columns="3">
              <h:outputText value = "fb" />
              <h:outputText value = "gmail" />
               <h:outputText value = "twiter" />
-          </p:panelGrid>
-      
-      
+          </h:panelGrid>
+           
+       </h:panelGrid>
+         
+      <h:panelGrid>
         <p:link href="http://projects.spring.io/spring-boot" >
             <p:graphicImage title="Spring Boot ${environment.getProperty('spring-boot.version')}" alt="Spring Boot ${environment.getProperty('spring-boot.version')}"
                             value="#{resource['images/spring-boot.png']}"
                             height="100" width="100"/>
         </p:link>
+      
+       </h:panelGrid>
+      
     </p:panelGrid>
     
 </ui:composition>
